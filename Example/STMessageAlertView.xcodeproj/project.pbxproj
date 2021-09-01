@@ -39,13 +39,13 @@
 		607FACE51AFB9204008FA782 /* STMessageAlertView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STMessageAlertView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		77FE5248E9D864ECC2B3370B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		77FE5248E9D864ECC2B3370B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7E1A561DBC0942CB61E59E60 /* Pods_STMessageAlertView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STMessageAlertView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E2BCE91FCE95AD1209BB74 /* Pods-STMessageAlertView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STMessageAlertView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-STMessageAlertView_Tests/Pods-STMessageAlertView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C032A7738B13A3816C40BD9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C032A7738B13A3816C40BD9D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D2C065DB94E787C11AA2040F /* Pods-STMessageAlertView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STMessageAlertView_Example.release.xcconfig"; path = "Target Support Files/Pods-STMessageAlertView_Example/Pods-STMessageAlertView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D3607EB473D10E9FA44A08DD /* Pods-STMessageAlertView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-STMessageAlertView_Tests.release.xcconfig"; path = "Target Support Files/Pods-STMessageAlertView_Tests/Pods-STMessageAlertView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E8ECC5770971A6169DFF07A4 /* STMessageAlertView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = STMessageAlertView.podspec; path = ../STMessageAlertView.podspec; sourceTree = "<group>"; };
+		E8ECC5770971A6169DFF07A4 /* STMessageAlertView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = STMessageAlertView.podspec; path = ../STMessageAlertView.podspec; sourceTree = "<group>"; };
 		FAC3641965A36B2C67DA5C82 /* Pods_STMessageAlertView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_STMessageAlertView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 				B5E2BCE91FCE95AD1209BB74 /* Pods-STMessageAlertView_Tests.debug.xcconfig */,
 				D3607EB473D10E9FA44A08DD /* Pods-STMessageAlertView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,10 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 848QGCR28N;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 848QGCR28N;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +315,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-STMessageAlertView_Example/Pods-STMessageAlertView_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/STExtensionKit/STExtensionKit.framework",
 				"${BUILT_PRODUCTS_DIR}/STMessageAlertView/STMessageAlertView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STExtensionKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/STMessageAlertView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +482,7 @@
 			baseConfigurationReference = 336D1190A243C804AEF31F64 /* Pods-STMessageAlertView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 848QGCR28N;
 				INFOPLIST_FILE = STMessageAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +498,7 @@
 			baseConfigurationReference = D2C065DB94E787C11AA2040F /* Pods-STMessageAlertView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 848QGCR28N;
 				INFOPLIST_FILE = STMessageAlertView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5E2BCE91FCE95AD1209BB74 /* Pods-STMessageAlertView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 848QGCR28N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +536,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D3607EB473D10E9FA44A08DD /* Pods-STMessageAlertView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 848QGCR28N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

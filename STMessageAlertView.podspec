@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'STMessageAlertView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of STMessageAlertView.'
+  s.summary          = '自定义弹窗'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,26 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+自定义弹窗，包含但按钮、双按钮以及自定义字体
                        DESC
 
-  s.homepage         = 'https://github.com/adolph.suntao@gmail.com/STMessageAlertView'
+  s.homepage         = 'https://github.com/adolph-suntao/STMessageAlertView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'adolph.suntao@gmail.com' => 'adolph.suntao@gmail.com' }
-  s.source           = { :git => 'https://github.com/adolph.suntao@gmail.com/STMessageAlertView.git', :tag => s.version.to_s }
+  s.author           = { 'suntao' => 'adolph.suntao@gmail.com' }
+  s.source           = { :git => 'https://github.com/adolph-suntao/STMessageAlertView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
-
+  s.swift_version = '5.0'
   s.source_files = 'STMessageAlertView/Classes/**/*'
-  
+  s.dependency 'STExtensionKit', '~> 0.1.3'
+
   # s.resource_bundles = {
   #   'STMessageAlertView' => ['STMessageAlertView/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
 end
