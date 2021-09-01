@@ -9,7 +9,7 @@
 import UIKit
 import STExtensionKit
 
-struct YJMessageAlertView {
+public struct YJMessageAlertView {
 
     /// 弹窗展示
     /// - Parameters:
@@ -19,7 +19,7 @@ struct YJMessageAlertView {
     ///   - otherBtnTitle: 确定按钮 默认 确定
     ///   - cancelBtnCompletion: 取消按钮回调
     ///   - otherBtnCompletion: 确定按钮回调
-    static func showMessage(title: String?,
+    public static func showMessage(title: String?,
                             message: String,
                             cancelBtnTitle: String? = "取消",
                             otherBtnTitle: String? = "确定",
@@ -49,7 +49,7 @@ struct YJMessageAlertView {
         alertView?.show()
     }
     
-    static func showMessage(title: String?,
+    public static func showMessage(title: String?,
                             message: String,
                             leftBtnTitle: String? = "取消",
                             rightBtnTitle: String? = "确定",

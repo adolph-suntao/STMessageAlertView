@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'STMessageAlertView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = '自定义弹窗'
 
 # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.swift_version = '5.0'
   s.source_files = 'STMessageAlertView/Classes/**/*'
-  s.dependency 'STExtensionKit', '~> 0.1.3'
+  s.dependency 'STExtensionKit'
 
   # s.resource_bundles = {
   #   'STMessageAlertView' => ['STMessageAlertView/Assets/*.png']

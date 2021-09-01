@@ -15,7 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         STMessageAlertView.showMessage("123456")
-        
+    
         // Do any additional setup after loading the view, typically from a nib.
     }
 
